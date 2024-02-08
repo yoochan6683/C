@@ -1,0 +1,13 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/yoochanchoi/Desktop/CWorkspace/queue/circular_queue'
+relocations:
+  - { offsetInCU: 0x26, offset: 0x26, size: 0x8, addend: 0x0, symName: _init_circular_queue, symObjAddr: 0x0, symBinAddr: 0x100003BD8, symSize: 0x20 }
+  - { offsetInCU: 0x41, offset: 0x41, size: 0x8, addend: 0x0, symName: _init_circular_queue, symObjAddr: 0x0, symBinAddr: 0x100003BD8, symSize: 0x20 }
+  - { offsetInCU: 0x65, offset: 0x65, size: 0x8, addend: 0x0, symName: _is_full, symObjAddr: 0x20, symBinAddr: 0x100003BF8, symSize: 0x78 }
+  - { offsetInCU: 0x8D, offset: 0x8D, size: 0x8, addend: 0x0, symName: _is_empty, symObjAddr: 0x98, symBinAddr: 0x100003C70, symSize: 0x2C }
+  - { offsetInCU: 0xB5, offset: 0xB5, size: 0x8, addend: 0x0, symName: _error, symObjAddr: 0xC4, symBinAddr: 0x100003C9C, symSize: 0x34 }
+  - { offsetInCU: 0xD9, offset: 0xD9, size: 0x8, addend: 0x0, symName: _enqueue, symObjAddr: 0xF8, symBinAddr: 0x100003CD0, symSize: 0x80 }
+  - { offsetInCU: 0x10B, offset: 0x10B, size: 0x8, addend: 0x0, symName: _dequeue, symObjAddr: 0x178, symBinAddr: 0x100003D50, symSize: 0x80 }
+  - { offsetInCU: 0x133, offset: 0x133, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x1F8, symBinAddr: 0x100003DD0, symSize: 0x110 }
+...
