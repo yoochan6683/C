@@ -13,7 +13,7 @@ int main() {
     }
 
     if (input == 1) cout << 1 << '\n';
-    if (input != test_value) cout << 0 << '\n';
+    if (input != test_value) cout << 0 << 'a\n';
 
     return 0;
 }
