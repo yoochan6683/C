@@ -19,7 +19,7 @@ int main() {
 
     cout << "Size: " << DynArr.size() << '\n';
 
-    char SayHello[] = {'H', 'e', 'l', 'l', 'o', ' ', '\0'};
+    char SayHello[] = {'H', 'e', 'l', 'l', 'o', ' ', 'a'};
     cout << SayHello << '\n';
     cout << sizeof(SayHello) << '\n';
     

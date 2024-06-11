@@ -10,7 +10,7 @@ int main() {
 
     int MonthInYear = 12;
     pInteger = &MonthInYear;
-    *pInteger = 13;
+    // *pInteger = 13; -> 에러: const 선언
     return 0;
 }
 

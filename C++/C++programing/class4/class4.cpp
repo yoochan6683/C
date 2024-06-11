@@ -13,24 +13,24 @@ int main() {
     // int* pNumbers = new int;
     int* pNumbers = new int[10];
 
-    cout << *pInteger << endl;
+    cout << "pInteger data: " << *pInteger << endl;
     //변수 주소가 아니라 'A'를 넣어도 작동함 -> 컴파일러가 const로 메모리에 저장하기 때문
-    cout << *pChar << endl;
+    cout << "pChar data: " << *pChar << endl;
 
-    cout << sizeof(pInteger) << endl;
-    cout << sizeof(pChar) << endl;
+    cout << "sizeof pInteger: " << sizeof(pInteger) << endl;
+    cout << "sizeof pChar: " << sizeof(pChar) << endl;
 
     delete [] pNumbers;//사용이 끝난 Heap을 제거(배열)
     int* myP = new int;
     *myP = 4;
-    cout << *myP << endl;
+    cout << "myP data: " << *myP << endl;
 
     delete myP;//Heap 제거(일반)
 
     for (int i = 0; i < 10; i++) {
         *(pNumbers + i) = i;
-        cout << *(pNumbers + i) << endl;
-        cout << pNumbers[i] << endl;
+        cout << "*(pNumbers + " << i << "): " << *(pNumbers + i) << endl;
+        cout << "pNumbers[" << i << "]: " << pNumbers[i] << endl;
     }
     return 0;
 }

@@ -10,6 +10,7 @@ ERR_CODE Factor(int n, int& rSquared, int &rCubed) {
     rCubed = n * n * n;
     return SUCCESS;
 }
+
 int main() {
     int number, squared, cubed;
     ERR_CODE result;

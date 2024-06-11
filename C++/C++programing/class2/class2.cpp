@@ -18,10 +18,10 @@ int main() {
     cout << resetiosflags(ios_base::hex | ios_base::showbase | ios_base::uppercase);
     cout << i << endl;
 
-    const double Pi = (double) 22.0 / 7;
+    const double Pi = 4321.123456789;
     cout << "Pi = " << Pi << endl;
     cout << setprecision(7);
-    cout << "Pi = " << Pi << endl;
+    cout << "precision Pi = " << Pi << endl;
     cout << fixed << "Fixed Pi = " << Pi << endl;
     cout << scientific << "Scientific Pi = " << Pi << endl;
     cout << setiosflags(ios_base::copyfmt_event);

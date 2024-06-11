@@ -23,7 +23,7 @@ class TV {
         void bar() {
             myRemote.foo();
         }
-}
+};
 
 int main() {
     AIRemote myA;

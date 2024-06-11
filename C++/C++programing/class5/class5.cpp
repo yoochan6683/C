@@ -14,7 +14,7 @@ int main() {
     // //MyNumbers++;  <- 에러: const를 변경하려 했기 때문
     // pNumbers++;
 
-    // //----------------------------------
+    //----------------------------------
     // int N[5] = {24, -1, 335, -999, 201};
     // int *pNum = N;
 
@@ -35,40 +35,40 @@ int main() {
     // cout << *pT << '\n';
 
     // if (pT) delete pT;
-    // try {
-    //     int* pAge = new int [59938281];
-    //     delete[] pAge;
-    // } catch(bad_alloc) {
-    //     cout << "Memory allocation failed" << '\n';
-    // }
+    try {
+        int* pAge = new int [59938281];
+        delete[] pAge;
+    } catch(bad_alloc) {
+        cout << "Memory allocation failed" << '\n';
+    }
 
     // int* pAge = new(nothrow) int [0xffffffff];
-    // int* pAge = new int [0xffffffff];
+    int* pAge = new int [0xffffffff];
 
-    // if (pAge) {
-    //     delete[] pAge;
-    // } else {
-    //     cout << "Memory allocation failed" << '\n';
-    // }
-    // int intOne;
-    // int &SomeRef = intOne;
-    // intOne = 5;
-    // cout << intOne << '\n';
-    // cout << SomeRef << '\n';
-    // cout << &intOne << '\n';
-    // cout << &SomeRef << '\n';
+    if (pAge) {
+        delete[] pAge;
+    } else {
+        cout << "Memory allocation failed" << '\n';
+    }
+    int intOne;
+    int &SomeRef = intOne;
+    intOne = 5;
+    cout << intOne << '\n';
+    cout << SomeRef << '\n';
+    cout << &intOne << '\n';
+    cout << &SomeRef << '\n';
 
-    // int Original = 30;
-    // int &Ref = Original;
+    int Original = 30;
+    int &Ref = Original;
 
-    // cout << Original << '\n';
-    // cout << Ref << '\n';
-    // int& Ref2 = Ref;
+    cout << Original << '\n';
+    cout << Ref << '\n';
+    int& Ref2 = Ref;
     
-    // cout << Ref2 << '\n';
-    // cout << &Original << '\n';
-    // cout << &Ref << '\n';
-    // cout << &Ref2 << '\n';
+    cout << Ref2 << '\n';
+    cout << &Original << '\n';
+    cout << &Ref << '\n';
+    cout << &Ref2 << '\n';
 
     int Number = 20;
     ReturnSquare(Number);

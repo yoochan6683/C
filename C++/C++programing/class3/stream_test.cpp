@@ -9,20 +9,21 @@ int main() {
     // cin >> Char1 >> Char2 >> Char3;
     // cout << Char1 << Char2 << Char3;
 
-    //C-Language style string input
+    // //C-Language style string input
+    // cout << "Enter a line: " << endl;
     // char CStyleStr[10] = {0};
-    //string은 끝에 '\0'이 한자리 차지하기 때문에 9개만 받을 수 있음
-    // cin.get(CStyleStr, 9);
-    // cout << CStyleStr << endl;
+    // // string은 끝에 '\0'이 한자리 차지하기 때문에 9개만 받을 수 있음
+    // cin.get(CStyleStr, 10);
+    // cout << "CStyleStr: " << CStyleStr << endl;
 
     // string Name1;
     // //띄어쓰기 있으면 못 가져옴 -> 입력: choi yoo chan 출력: choi
     // // cin >> Name1;
-    // getline -> 다 가져옴
+    // // getline -> 다 가져옴
     // getline(cin, Name1);
     // cout << "Hi " << Name1 << endl;
 
-    ofstream myFile;
+    fstream myFile;
 
     myFile.open("HelloFile.txt", ios_base::out);
 
@@ -30,6 +31,21 @@ int main() {
         cout << "File Open.successful" << endl;
         myFile << "My First test file" << endl;
         myFile << "Hello File";
+        myFile.close();
+    }
+
+    myFile.open("HelloFile.txt", ios_base::in);
+
+    if(myFile.is_open()) {
+        cout << "File open successful. It contains: " << '\n';
+        string fileContents;
+
+        while(myFile.good()) {
+            getline(myFile, fileContents);
+            cout << fileContents << '\n';
+        }
+
+        cout << "Finished reading file, will close now" << '\n';
         myFile.close();
     }
 
